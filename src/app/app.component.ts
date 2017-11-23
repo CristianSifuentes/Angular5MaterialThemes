@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  otherTheme: boolean = false;
+
+  changeTheme(){
+    this.otherTheme = !this.otherTheme;
+  }
 }
